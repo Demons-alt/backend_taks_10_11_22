@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        h1 {
+            font-family: sans;
+            color: rgb(202, 64, 64);
+        }
+
+        div {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(50, 152, 165);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1>testing send to gmail</h1>
+        <!-- <img src="sleep"/> -->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tortor at libero finibus pulvinar. In
+            posuere lorem et nisl porttitor, et mattis mauris feugiat. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas. Donec sit amet nunc vel ipsum venenatis mattis a eu dui. Ut ante
+            elit, blandit ac massa quis, efficitur ultricies ex. Nunc odio leo, pellentesque a varius vel, luctus vitae
+            velit. In eu augue nec mi tempor euismod. Nunc in accumsan ligula, sed tempus augue. Cras vel elit nec risus
+            vulputate volutpat ac id lacus. Cras nec ante mi. Orci varius natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Nunc justo enim, porttitor nec scelerisque quis, auctor ac neque. Cras
+            scelerisque odio non mi feugiat porta. Mauris pulvinar bibendum augue vitae vestibulum. Vivamus eleifend
+            suscipit nulla eu dictum. Integer nec suscipit lorem.
+
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris pellentesque
+            finibus magna, ac luctus urna. Integer suscipit faucibus eleifend. Aliquam vel ante massa. Vestibulum
+            scelerisque vestibulum tellus quis dapibus. Pellentesque sit amet tristique sem, ac rhoncus metus. Sed
+            eleifend tincidunt imperdiet. Vivamus dapibus ante venenatis semper scelerisque. Sed pretium vitae leo
+            rutrum euismod. Sed nulla tortor, consectetur eu aliquet auctor, dictum id libero. Mauris posuere ante
+            nulla, id pretium risus mattis eget.
+        </p>
+        <!-- <img src="image1" /> -->
+    </div>
+    <table>
+        <thead>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Total Claim</th>
+        </thead>
+    
+        <tbody>   
+            {{#each DataArray}}
+            <tr>
+                <td>
+                    {{description}}
+                </td>
+                <td>
+                    {{activity_date}}
+                </td>
+                <td>
+                    Rp.{{total_claim}},00-
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+
+    </table>
+</body>
+
+</html>
